@@ -38,7 +38,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'activesupport', '>= 6.1', '< 8.0'
   s.add_dependency 'request_store', '>= 1.5.0', '< 2.0'
 
-  s.add_development_dependency 'bundler', '>= 2.5', '< 5.0'
   s.add_development_dependency 'debug', '>= 1.7', '< 2.0'
   s.add_development_dependency 'factory_bot', '>= 6.0', '< 7.0'
   s.add_development_dependency 'rspec', '>= 3.12', '< 4.0'
