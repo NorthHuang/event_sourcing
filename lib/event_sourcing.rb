@@ -1,0 +1,51 @@
+# frozen_string_literal: true
+
+require 'base64'
+require 'bigdecimal'
+require 'bigdecimal/util'
+require 'date'
+require 'json'
+require 'logger'
+require 'active_model'
+require 'active_record'
+require 'active_support/core_ext/hash'
+require 'active_support/core_ext/hash/indifferent_access'
+require 'active_support/core_ext/module/concerning'
+require 'active_support/core_ext/module/delegation'
+require 'active_support/core_ext/object/blank'
+require 'active_support/core_ext/object/try'
+require 'active_support/core_ext/string/inflections'
+require 'active_support/time'
+
+require 'event_sourcing/extensions'
+require 'event_sourcing/errors'
+require 'event_sourcing/version'
+
+require 'event_sourcing/helpers/attribute_support'
+require 'event_sourcing/helpers/self_applier'
+
+require 'event_sourcing/after_commit'
+require 'event_sourcing/aggregate_repository'
+require 'event_sourcing/aggregate_repository/aggregate_load_options'
+require 'event_sourcing/aggregate_repository/domain_load_options'
+require 'event_sourcing/state_machine'
+require 'event_sourcing/aggregate_root'
+require 'event_sourcing/base_type'
+require 'event_sourcing/command_handler'
+require 'event_sourcing/command_service'
+require 'event_sourcing/command'
+require 'event_sourcing/configuration'
+require 'event_sourcing/core'
+require 'event_sourcing/domain'
+require 'event_sourcing/event_handler'
+require 'event_sourcing/event_publisher'
+require 'event_sourcing/event_record'
+require 'event_sourcing/event_store'
+require 'event_sourcing/event'
+require 'event_sourcing/memoization_store/base'
+require 'event_sourcing/memoization_store/request_store'
+require 'event_sourcing/projector'
+require "event_sourcing/after_outermost_commit"
+
+# Main EventSourcing namespace.
+module EventSourcing; end
